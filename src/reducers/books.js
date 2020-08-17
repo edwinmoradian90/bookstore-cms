@@ -1,24 +1,22 @@
 import generateID from '../utils/helpers';
 
-const initialState = {
-  books: [
-    {
-      title: 'Book 1',
-      category: 'Action',
-      id: generateID(),
-    },
-    {
-      title: 'Book 2',
-      category: 'History',
-      id: generateID(),
-    },
-    {
-      title: 'Book 3',
-      category: 'Kids',
-      id: generateID(),
-    },
-  ],
-};
+const initialState = [
+  {
+    title: 'Book 1',
+    category: 'Action',
+    id: generateID(),
+  },
+  {
+    title: 'Book 2',
+    category: 'History',
+    id: generateID(),
+  },
+  {
+    title: 'Book 3',
+    category: 'Kids',
+    id: generateID(),
+  },
+];
 
 const bookStore = (state = initialState, action) => {
   const { type, bookIndex, book } = action;
