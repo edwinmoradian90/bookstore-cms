@@ -21,20 +21,14 @@ const BooksList = () => {
 
   return (
     <div className="booksTable">
-      {books.map((book, i) => (
+      {books.map((book, index) => (
         <>
           <div key={`${book} book`} className={book}>
-            <Book book={book} />
-          </div>
-          <div className="removeBookContainer">
-            <button
-              onClick={() => handleRemoveBook(i)}
-              type="button"
-              className="removeBook btn btn-danger"
-              id={`${book.title}`}
-            >
-              Remove Book
-            </button>
+            <Book
+              book={book}
+              handleRemoveBook={handleRemoveBook}
+              index={index}
+            />
           </div>
         </>
       ))}
