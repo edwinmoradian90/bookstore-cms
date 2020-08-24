@@ -8,7 +8,9 @@ const Navbar = () => (
       <li className="categoriesTab">CATEGORIES</li>
     </ul>
     <ul className="navbarRight">
-      <li className="accountIcon">Soemthing</li>
+      <li className="accountIconCircle">
+        <div className="accountIcon" />
+      </li>
     </ul>
   </div>
 );

@@ -14,6 +14,8 @@ ul {
   --lightGrey: #e8e8e8;
   --paleGrey: #f5f6fa;
   --white: #ffffff;
+  --robotoSlab: 'Roboto Slab', serif;
+  --montserrat: 'Montserrat', sans-serif; 
 }
 
 .appContainer {
@@ -30,6 +32,7 @@ ul {
 .app {
   background: var(--darkerWhite);
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  height: 1097px;
   width: 1400px;
 }
 
@@ -61,13 +64,15 @@ ul {
 .navbarTitle {
   color: var(--blue);
   font-size: 30px;
+  font-family: var(--montserrat);
+  font-weight: 700;
   margin-right: 41px;
 }
 
 .booksTab {
   width: 59px;
   height: 16px;
-  font-family: Montserrat;
+  font-family: var(--montserrat);
   font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
@@ -91,6 +96,20 @@ ul {
   width: 59px;
 }
 
+.accountIconCircle {
+  border: 1px solid var(--lightGrey);
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+}
+
+.accountIcon {
+  background: var(--blue);
+  height: 20px;
+  margin: auto;
+  width: 20px;
+}
+
 /*
 LESSON PANEL
 */
@@ -108,7 +127,57 @@ LESSON PANEL
 }
 
 .bookOptions {
+  color: var(--blue);
   display: flex;
+  font-family: var(--robotoSlab);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.comments {
+  border-right: 1px solid var(--lightGrey);
+  padding-right: 15px;
+}
+
+.removeBook {
+  border-right: 1px solid var(--lightGrey);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.edit {
+  padding-left: 15px;
+}
+
+.statusPercentage {
+  color: var(--blackThree);
+  font-family: var(--montserrat);
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.statusComplete {
+  color: var(--blackThree);
+  font-family: var(--montserrat);
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 50%;
+}
+
+.bookCategory {
+  color: var(--blackThree);
+  font-family: var(--montserrat);
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 50%;
+}
+
+.bookTitle {
+  color: var(--blackThree);
+  font-family: var(--robotoSlab);
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -.02;
 }
 
 /*
@@ -118,8 +187,4 @@ BOOKS FORM
 .addBookInputs {
   display: flex;
   justify-content: space-between;
-}
-
-.bookTitle {
-  width: 40vw;
 }

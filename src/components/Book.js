@@ -8,8 +8,8 @@ const Book = props => {
     <div className="lessonPanel">
       <div className="book">
         <div className="aboutBook">
-          <span className="category">{category}</span>
-          <h3 className="title">{title}</h3>
+          <span className="bookCategory">{category}</span>
+          <h3 className="bookTitle">{title}</h3>
         </div>
         <div className="bookOptions">
           <div className="comments">Comments</div>
