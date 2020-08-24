@@ -18,6 +18,14 @@ ul {
   --montserrat: 'Montserrat', sans-serif; 
 }
 
+.button {
+  background-color: var(--blue);
+  border: 0;
+  border-radius: 3px;
+  width: 184px;
+  height: 33px;
+}
+
 .appContainer {
   background: var(--paleGrey);
   display: flex;
@@ -93,6 +101,7 @@ ul {
   height: 16px;
   line-height: normal;
   letter-spacing: 1.9px;
+  opacity: 50%;
   width: 59px;
 }
 
@@ -149,6 +158,14 @@ LESSON PANEL
   padding-left: 15px;
 }
 
+.bookCompletion {
+  display: flex;
+}
+
+.completionIcon {
+  margin-right: 22px;
+}
+
 .statusPercentage {
   color: var(--blackThree);
   font-family: var(--montserrat);
@@ -162,6 +179,29 @@ LESSON PANEL
   font-size: 14px;
   font-weight: 400;
   opacity: 50%;
+}
+
+.chapter {
+  font-family: var(--robotoSlab);
+  font-weight: 300;
+}
+
+.currentChapterLabel {
+  color: var(--blackThree);
+  font-size: 13px;
+  opacity: 50%;
+}
+
+.currentChapter {
+  color: var(--blackThree);
+  font-size: 16px;
+}
+
+.submitBookButton {
+  color: var(--white);
+  font-family: var(--robotoSlab);
+  font-size: 13px;
+  font-weight: 300;
 }
 
 .bookCategory {

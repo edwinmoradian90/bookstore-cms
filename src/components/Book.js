@@ -27,7 +27,12 @@ const Book = props => {
       <div className="chapter">
         <h5 className="currentChapterLabel">CURRENT CHAPTER</h5>
         <div className="currentChapter">Chapter 13</div>
-        <button type="button">UPDATE PROGRESS</button>
+        <button
+          className="button submitBookButton"
+          type="button"
+        >
+          UPDATE PROGRESS
+        </button>
       </div>
     </div>
   );
