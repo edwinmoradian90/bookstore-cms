@@ -1,6 +1,65 @@
 body,
-html {
+html,
+ul {
   border: 0;
   margin: 0;
   padding: 0;
+}
+
+.appContainer {
+  background: red;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  padding: 0 100px 0 100px;
+  width: 100%;
+}
+
+/*
+  NAVBAR
+*/
+
+.navbar {
+  display: flex;
+  height: 95px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.navbarLeft {
+  display: flex;
+  list-style: none;
+}
+
+.navbarRight {
+  list-style: none;
+}
+
+/*
+LESSON PANEL
+*/
+
+.lessonPanel {
+  display: flex;
+  height: 170px;
+  justify-content: space-between;
+}
+
+.bookOptions {
+  display: flex;
+}
+
+/*
+BOOKS FORM
+*/
+
+.addBookInputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bookTitle {
+  width: 40vw;
 }

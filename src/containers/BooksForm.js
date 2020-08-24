@@ -20,8 +20,12 @@ const BooksForm = () => {
     setCategory('choose');
   };
   return (
-    <form onSubmit={e => handleSubmit(e)}>
-      <div className="form-group">
+    <form
+      className="booksForm"
+      onSubmit={e => handleSubmit(e)}
+    >
+      <div className="addBookLabel">ADD NEW BOOK</div>
+      <div className="addBookInputs">
         <input
           onChange={e => handleTitleChange(e)}
           value={title}
@@ -30,26 +34,26 @@ const BooksForm = () => {
           id="bookTitle"
           placeholder="Book Title"
         />
+        <div className="categoryInput">
+          <select
+            onChange={e => handleCategoryChange(e)}
+            id="inputState"
+            className="categorySelector"
+          >
+            <option value="choose">Choose...</option>
+            {categories.map(category => (
+              <option
+                value={category}
+                key={category}
+                className={category}
+              >
+                {category}
+              </option>
+            ))}
+          </select>
+        </div>
+        <button type="submit" className="addBookButton">ADD BOOK</button>
       </div>
-      <div className="form-group col-md-4">
-        <select
-          onChange={e => handleCategoryChange(e)}
-          id="inputState"
-          className="form-control"
-        >
-          <option value="choose">Choose...</option>
-          {categories.map(category => (
-            <option
-              value={category}
-              key={category}
-              className={category}
-            >
-              {category}
-            </option>
-          ))}
-        </select>
-      </div>
-      <button type="submit" className="btn btn-primary">Submit</button>
     </form>
   );
 };
