@@ -30,7 +30,7 @@ const BooksForm = () => {
           onChange={e => handleTitleChange(e)}
           value={title}
           type="text"
-          className="bookTitle"
+          className="bookTitlePlaceholder"
           id="bookTitle"
           placeholder="Book Title"
         />
@@ -52,7 +52,7 @@ const BooksForm = () => {
             ))}
           </select>
         </div>
-        <button type="submit" className="addBookButton">ADD BOOK</button>
+        <button type="submit" className="button addBookButton">ADD BOOK</button>
       </div>
     </form>
   );
