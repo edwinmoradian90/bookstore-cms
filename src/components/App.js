@@ -5,10 +5,12 @@ import Navbar from './Navbar';
 
 function App() {
   return (
-    <div className="app appContainer">
+    <div className="appContainer">
       <Navbar />
-      <BooksList />
-      <BooksForm />
+      <div className="app ">
+        <BooksList />
+        <BooksForm />
+      </div>
     </div>
   );
 }

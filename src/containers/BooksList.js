@@ -22,15 +22,13 @@ const BooksList = () => {
   return (
     <div className="booksTable">
       {books.map((book, index) => (
-        <>
-          <div key={`${book} book`} className={book}>
-            <Book
-              book={book}
-              handleRemoveBook={handleRemoveBook}
-              index={index}
-            />
-          </div>
-        </>
+        <div key={`${book.title} book`} className={book.title}>
+          <Book
+            book={book}
+            handleRemoveBook={handleRemoveBook}
+            index={index}
+          />
+        </div>
       ))}
       <div className="categoryFilter">
         <CategoryFilter handleFilterChange={e => handleFilterChange(e.target.value)} />

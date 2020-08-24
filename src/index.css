@@ -6,14 +6,31 @@ ul {
   padding: 0;
 }
 
+:root {
+  --blackThree: #121212;
+  --blue: #0290ff;
+  --darkerWhite: #fafafa;
+  --lightBlue: #4386bf;
+  --lightGrey: #e8e8e8;
+  --paleGrey: #f5f6fa;
+  --white: #ffffff;
+}
+
 .appContainer {
-  background: red;
+  background: var(--paleGrey);
   display: flex;
-  flex-direction: column;
-  height: auto;
-  justify-content: center;
-  padding: 0 100px 0 100px;
-  width: 100%;
+  flex-direction:column;
+  height: 1434px;
+  align-items: center;
+  padding-top: 150px;
+  margin: 0 auto;
+  width: 1600px; 
+}
+
+.app {
+  background: var(--darkerWhite);
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  width: 1400px;
 }
 
 /*
@@ -21,14 +38,18 @@ ul {
 */
 
 .navbar {
+  background: var(--white);
+  border: solid 1px var(--lightGrey);
   display: flex;
   height: 95px;
   margin: 0;
-  padding: 0;
-  width: 100%;
+  padding: 0 100px 0 100px;
+  width: 1400px;
 }
 
 .navbarLeft {
+  align-items: center;
+  color: var(--blackThree);
   display: flex;
   list-style: none;
 }
@@ -37,14 +58,53 @@ ul {
   list-style: none;
 }
 
+.navbarTitle {
+  color: var(--blue);
+  font-size: 30px;
+  margin-right: 41px;
+}
+
+.booksTab {
+  width: 59px;
+  height: 16px;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  margin-right: 41px;
+  color: var(--blackThree);
+}
+
+.categoriesTab {
+  color: var(--blackThree);
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  height: 16px;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  width: 59px;
+}
+
 /*
 LESSON PANEL
 */
 
 .lessonPanel {
+  background-color: var(--white);
+  border-radius: 4px;
+  border: solid 1px var(--lightGrey);
   display: flex;
   height: 170px;
+  padding: 32px 27px;
+  margin: 15px auto;
   justify-content: space-between;
+  width: 1200px;
 }
 
 .bookOptions {
