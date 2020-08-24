@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 
 function App() {
   return (
-    <div className="app">
+    <div className="app appContainer">
       <Navbar />
       <BooksList />
       <BooksForm />
