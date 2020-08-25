@@ -9,7 +9,7 @@ const CategoryFilter = props => {
       <select
         name="category"
         id="category"
-        className="category"
+        className="selectCategoryElement"
         onChange={e => handleFilterChange(e)}
       >
         <option value="CATEGORIES">CATEGORIES</option>
