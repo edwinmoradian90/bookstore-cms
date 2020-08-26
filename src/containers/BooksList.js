@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { removeBook, changeFilter } from '../actions/index';
 import Book from '../components/Book';
 import Navbar from '../components/Navbar';
-import CategoryFilter from '../components/CategoryFilter';
 
 const BooksList = () => {
   const dispatch = useDispatch();

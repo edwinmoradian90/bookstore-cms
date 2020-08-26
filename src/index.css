@@ -114,9 +114,10 @@ ul {
 }
 
 .accountIcon {
-  background: var(--blue);
+  color: var(--blue);
   height: 20px;
-  margin: auto;
+  margin-left: 11px;
+  margin-top: 11px;
   width: 20px;
 }
 
@@ -165,6 +166,11 @@ LESSON PANEL
 
 .completionIcon {
   margin-right: 22px;
+}
+
+.circularProgressbar {
+  height: 68px;
+  width: 68px;
 }
 
 .statusPercentage {

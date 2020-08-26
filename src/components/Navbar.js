@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { IoIosPerson } from 'react-icons/io';
 import CategoryFilter from './CategoryFilter';
 
 const Navbar = props => {
@@ -15,14 +16,14 @@ const Navbar = props => {
       </ul>
       <ul className="navbarRight">
         <li className="accountIconCircle">
-          <div className="accountIcon" />
+          <IoIosPerson className="accountIcon" />
         </li>
       </ul>
     </div>
   );
 };
 
-Navbar.proptTypes = {
+Navbar.propTypes = {
   handleFilterChange: PropTypes.func.isRequired,
 };
 

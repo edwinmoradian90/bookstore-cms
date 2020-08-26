@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
 const Book = props => {
   const { book } = props;
   const { title, category } = book;
+  const percentage = 66;
   return (
     <div className="lessonPanel">
       <div className="book">
@@ -18,7 +21,12 @@ const Book = props => {
         </div>
       </div>
       <div className="bookCompletion">
-        <div className="completionIcon">Status</div>
+        <div className="completionIcon">
+          <CircularProgressbar
+            className="circularProgressbar"
+            value={percentage}
+          />
+        </div>
         <div className="status">
           <div className="statusPercentage">64%</div>
           <div className="statusComplete">Completed</div>
@@ -44,8 +52,6 @@ Book.propTypes = {
     category: PropTypes.string,
     title: PropTypes.string,
   }).isRequired,
-  handleRemoveBook: PropTypes.func.isRequired,
-  index: PropTypes.number.isRequired,
 };
 
 export default Book;
