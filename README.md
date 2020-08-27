@@ -21,7 +21,7 @@ This project is a front-end application that will help organize and manage a boo
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To view the application, you can check it out [here](), or
+To view the application, you can check it out [here](https://microverse-bookstore.herokuapp.com/), or
 you can clone a copy on to your local machine, install the dependencies, and run it with npm.
 ### Prerequisites
 
