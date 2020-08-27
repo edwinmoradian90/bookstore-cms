@@ -138,7 +138,7 @@ LESSON PANEL
 }
 
 .bookOptions {
-  color: var(--blue);
+  color: var(--lightBlue);
   display: flex;
   font-family: var(--robotoSlab);
   font-size: 14px;
@@ -160,8 +160,19 @@ LESSON PANEL
   padding-left: 15px;
 }
 
-.bookCompletion {
+.bookCompletionContainer {
   display: flex;
+  justify-content: space-between;
+  width: 650px;
+}
+
+.bookCompletion {
+  align-items: center;
+  border-right: 2px solid var(--lightGrey);
+  display: flex;
+  height: 70px;
+  margin-top: 10px;
+  padding-right: 80px;
 }
 
 .completionIcon {
@@ -169,6 +180,7 @@ LESSON PANEL
 }
 
 .circularProgressbar {
+  margin-top: 8px;
   height: 68px;
   width: 68px;
 }
@@ -191,17 +203,21 @@ LESSON PANEL
 .chapter {
   font-family: var(--robotoSlab);
   font-weight: 300;
+  min-width: 300px;
 }
 
 .currentChapterLabel {
   color: var(--blackThree);
   font-size: 13px;
+  margin-bottom: 7px;
   opacity: 0.5;
+  padding: 0;
 }
 
 .currentChapter {
   color: var(--blackThree);
   font-size: 16px;
+  letter-spacing: -0.4px;
   margin-bottom: 23px;
 }
 
@@ -217,6 +233,7 @@ LESSON PANEL
   font-family: var(--montserrat);
   font-size: 14px;
   font-weight: bold;
+  margin-bottom: 4px;
   opacity: 0.5;
 }
 
@@ -225,8 +242,16 @@ LESSON PANEL
   font-family: var(--robotoSlab);
   font-size: 22px;
   font-weight: bold;
-  letter-spacing: -0.02px;
-  margin-bottom: 40px;
+  letter-spacing: -0.2px;
+  margin: 0;
+}
+
+.bookAuthor {
+  color: var(--lightBlue);
+  font-family: var(--robotoSlab);
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 21px;
 }
 
 /*

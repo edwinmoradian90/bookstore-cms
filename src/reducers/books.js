@@ -2,18 +2,30 @@ import generateID from '../utils/helpers';
 
 const initialState = [
   {
-    title: 'Book 1',
+    title: 'The Hunger Games',
+    author: 'Suzanne Collins',
     category: 'Action',
+    chapter: 'Chapter 17',
+    completed: 64,
+    status: 'Completed',
     id: generateID(),
   },
   {
-    title: 'Book 2',
-    category: 'History',
+    title: 'Dune',
+    author: 'Frank Herbert',
+    category: 'Science Fiction',
+    chapter: 'Chapter 3: "A Lesson Learned"',
+    completed: 8,
+    status: 'Completed',
     id: generateID(),
   },
   {
-    title: 'Book 3',
-    category: 'Kids',
+    title: 'Capital in the Twenty-First Century',
+    author: 'Suzanne Collins',
+    category: 'Economy',
+    chapter: 'Introduction',
+    completed: 0,
+    status: 'Completed',
     id: generateID(),
   },
 ];
@@ -27,7 +39,9 @@ const bookStore = (state = initialState, action) => {
         {
           id: generateID(),
           title: book.title,
+          author: book.author,
           category: book.category,
+          completed: book.completed,
         },
       ];
     case 'REMOVE_BOOK':
