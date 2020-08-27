@@ -163,7 +163,7 @@ LESSON PANEL
 .bookCompletionContainer {
   display: flex;
   justify-content: space-between;
-  width: 650px;
+  width: 630px;
 }
 
 .bookCompletion {
@@ -172,7 +172,7 @@ LESSON PANEL
   display: flex;
   height: 70px;
   margin-top: 10px;
-  padding-right: 80px;
+  padding-right: 90px;
 }
 
 .completionIcon {
