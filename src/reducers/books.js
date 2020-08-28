@@ -6,7 +6,7 @@ const initialState = [
     author: 'Suzanne Collins',
     category: 'Action',
     chapter: 'Chapter 17',
-    completed: 64,
+    completed: 100,
     status: 'Completed',
     id: generateID(),
   },
@@ -15,8 +15,8 @@ const initialState = [
     author: 'Frank Herbert',
     category: 'Science Fiction',
     chapter: 'Chapter 3: "A Lesson Learned"',
-    completed: 8,
-    status: 'Completed',
+    completed: 64,
+    status: 'Not completed',
     id: generateID(),
   },
   {
@@ -25,7 +25,7 @@ const initialState = [
     category: 'Economy',
     chapter: 'Introduction',
     completed: 0,
-    status: 'Completed',
+    status: 'Not completed',
     id: generateID(),
   },
 ];
@@ -39,9 +39,11 @@ const bookStore = (state = initialState, action) => {
         {
           id: generateID(),
           title: book.title,
-          author: book.author,
+          author: book.author || 'Not specified',
           category: book.category,
-          completed: book.completed,
+          chapter: book.chapter || "Haven't started yet...",
+          completed: 0,
+          status: 'Not completed',
         },
       ];
     case 'REMOVE_BOOK':

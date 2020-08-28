@@ -137,6 +137,11 @@ LESSON PANEL
   width: 1200px;
 }
 
+.booksTable {
+  max-height: 540px;
+  overflow-y: auto;
+}
+
 .bookOptions {
   color: var(--lightBlue);
   display: flex;

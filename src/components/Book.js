@@ -4,7 +4,7 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 const Book = props => {
-  const { book } = props;
+  const { book, handleRemoveBook, index } = props;
   const {
     title,
     author,
@@ -23,7 +23,13 @@ const Book = props => {
         </div>
         <div className="bookOptions">
           <div className="comments">Comments</div>
-          <div className="removeBook">Remove</div>
+          <div
+            className="removeBook"
+            onClick={e => handleRemoveBook(index)}
+            role="button"
+          >
+            Remove
+          </div>
           <div className="edit">Edit</div>
         </div>
       </div>
@@ -68,6 +74,8 @@ Book.propTypes = {
     completed: PropTypes.number,
     status: PropTypes.string,
   }).isRequired,
+  handleRemoveBook: PropTypes.func.isRequired,
+  index: PropTypes.number.isRequired,
 };
 
 export default Book;
