@@ -25,8 +25,10 @@ const Book = props => {
           <div className="comments">Comments</div>
           <div
             className="removeBook"
-            onClick={e => handleRemoveBook(index)}
+            onClick={() => handleRemoveBook(index)}
             role="button"
+            tabIndex={index}
+            onKeyDown
           >
             Remove
           </div>
